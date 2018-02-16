@@ -8,7 +8,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/.cache/dev-404-page.js",
       "componentChunkName": "component---cache-dev-404-page-js",
       "context": {},
-      "updatedAt": 1518810873812,
+      "updatedAt": 1518815623281,
       "pluginCreator___NODE": "Plugin dev-404-page",
       "pluginCreatorId": "Plugin dev-404-page",
       "componentPath": "/Users/colesayer/Development/portfolio_site/.cache/dev-404-page.js",
@@ -17,7 +17,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "daa46be152af7b77e94c5123e9405ee6",
+        "contentDigest": "6a9517cce3c0cfc28f6f84da8e126557",
         "owner": "internal-data-bridge"
       }
     },
@@ -376,12 +376,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-02-16T19:54:32.353Z",
+      "buildTime": "2018-02-16T21:13:42.003Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "0c45576ee3cf38aa643e130c53641ede",
+        "contentDigest": "dfc0181f442fff7aba82ea793a23c938",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -394,7 +394,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "updatedAt": 1518810873819,
+      "updatedAt": 1518815623288,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
@@ -403,7 +403,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "048d626f9b20a9261841b599aa4c4beb",
+        "contentDigest": "87d845b9a41c85f7355b19d31d099e14",
         "owner": "internal-data-bridge"
       }
     },
@@ -415,7 +415,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1518810873820,
+      "updatedAt": 1518815623288,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/index.js",
@@ -424,7 +424,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "be2d15a2bf435653be6c335eee13d47b",
+        "contentDigest": "be6532b4338742a496372447af5c578d",
         "owner": "internal-data-bridge"
       }
     },
@@ -436,7 +436,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "updatedAt": 1518810873822,
+      "updatedAt": 1518815623290,
       "pluginCreator___NODE": "Plugin prod-404",
       "pluginCreatorId": "Plugin prod-404",
       "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
@@ -445,7 +445,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ba14433a3ea0800a0e2bc837c2672e6b",
+        "contentDigest": "1b53546b4846245217e84d069c5e50f9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /info/": {
+      "layout": "index",
+      "jsonName": "info.json",
+      "internalComponentName": "ComponentInfo",
+      "path": "/info/",
+      "component": "/Users/colesayer/Development/portfolio_site/src/pages/info.js",
+      "componentChunkName": "component---src-pages-info-js",
+      "context": {},
+      "updatedAt": 1518817177444,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/info.js",
+      "id": "SitePage /info/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "fe83dfa74895cd3314a05517484ff82a",
         "owner": "internal-data-bridge"
       }
     }

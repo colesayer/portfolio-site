@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import './index.css'
+import NewHeader from '../components/nav/newHeader.js'
+
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -12,6 +14,7 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    <NewHeader />
     <div
     style={{
       maxWidth: '100%',

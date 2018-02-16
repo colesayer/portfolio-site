@@ -6,7 +6,8 @@ import * as OBJLoader from 'three-obj-loader';
 OBJLoader.default(THREE)
 
 export function initTitle(threeLoader, objFile, titleColor, titleGroup, idx, isMobile){
-  let titleMaterial = new THREE.MeshPhongMaterial({color: `${titleColor}`})
+  let titleMaterial = new THREE.MeshPhongMaterial({color: `black`})
+  // let titleMaterial = new THREE.MeshPhongMaterial({color: `${titleColor}`})
 
   let titleLoader = new threeLoader.OBJLoader()
   titleLoader.load(`${objFile}`, function(object){
