@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+// import ThreeTitle from '../components/three/threeTitle.js'
 import ThreeTitle from '../components/three/threeTitle.js'
-
 
 class IndexPage extends Component {
 

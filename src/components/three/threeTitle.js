@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import randomColor from 'randomcolor'
 import {initTitle} from './initTitle.js'
+import {initLink} from './initLink.js'
 import * as THREE from 'three';
 import TWEEN from 'tween.js'
 var OrbitControls = require('three-orbit-controls')(THREE)
@@ -67,6 +68,8 @@ class ThreeTitle extends Component{
     this.pointLight.shadow.camera.near = 0.5;       // default
     this.pointLight.shadow.camera.far = 500      // default
 
+    this.objectArray = []
+
     //ADD TITLE
     this.titleGroup = new THREE.Group()
     if(this.isMobile){
@@ -74,24 +77,35 @@ class ThreeTitle extends Component{
     } else {
       this.objFiles = ['./models/title/1-1-C.obj', './models/title/1-2-O.obj', './models/title/1-3-L.obj', './models/title/1-4-E.obj', './models/title/2-1-S.obj', './models/title/2-2-H.obj', './models/title/2-3-A.obj', './models/title/2-4-P.obj', './models/title/2-5-I.obj', './models/title/2-6-R.obj', './models/title/2-7-O.obj' ]
     }
-    this.titleColors = randomColor({luminosity: 'bright', count: 11})
+    this.titleColors = randomColor({luminosity: 'dark', count: 11})
 
     this.addTitle()
+
 
     this.titleGroup.position.set(-2, -1, 0)
     this.scene.add(this.titleGroup)
 
-    //ADD FLOOR
-    // const floorColor = "#21b226"
-    // this.floorGeometry = new THREE.PlaneBufferGeometry(200, 200, 32, 32)
-    // this.floorMaterial = new THREE.MeshStandardMaterial({color: `${floorColor}`})
-    // this.floorMaterial.roughness = .7;
-    // this.floor = new THREE.Mesh(this.floorGeometry, this.floorMaterial)
-    // this.floor.rotation.x = - Math.PI / 2
-    // this.isMobile ? this.floor.position.y = -4.05 : this.floor.position.y = -4.05
-    // this.floor.receiveShadow = true
-    // this.scene.add(this.floor)
+    //ADD LINKS
+    this.linkGroup = new THREE.Group()
+    var logos = {
+      github: "http://res.cloudinary.com/dwnehv6tb/image/upload/v1518916609/if_github_291716_cnahxc.png",
+      linkedIn: "http://res.cloudinary.com/dwnehv6tb/image/upload/v1518916609/if_linkedin_246593_zxo5ag.png",
+      palette: "http://res.cloudinary.com/dwnehv6tb/image/upload/v1518916609/if_ic_palette_48px_352576_qfottf.png",
+      medium: "http://res.cloudinary.com/dwnehv6tb/image/upload/v1518918500/if_social_medium_710288_rrvvp7.png",
+      about: "http://res.cloudinary.com/dwnehv6tb/image/upload/v1518921108/about_dzxpxh.png",
+      projects: "http://res.cloudinary.com/dwnehv6tb/image/upload/v1518921113/projects_po3wh9.png",
+      instagram: "http://res.cloudinary.com/dwnehv6tb/image/upload/v1518921641/if_38-instagram_104466_ma1sof.png"
+    }
 
+    for(let logo in logos){
+      initLink(this.linkGroup, logo, logos, this.addToArray)
+    }
+
+
+    this.scene.add(this.linkGroup)
+
+
+    //ADD FLOOR
     const floorColor = "#fffd54"
     this.floorGroup = new THREE.Group()
 
@@ -175,6 +189,10 @@ class ThreeTitle extends Component{
 
       initTitle(this.THREE, objFile, titleColor, this.titleGroup, idx, this.isMobile )
     }
+  }
+
+  addToArray = (obj) => {
+    this.objectArray.push(obj)
   }
 
   onWindowResize = () => {

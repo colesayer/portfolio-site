@@ -14,7 +14,6 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <NewHeader />
     <div
     style={{
       maxWidth: '100%',

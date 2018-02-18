@@ -16,16 +16,14 @@ body{
 }
 .drop-down{
   position: absolute;
-  top: 15px;
-  left: 15px;
+  bottom: 15px;
+  left: 10vw;
   z-index: 10;
 }
 .main-button {
-  color: black;
-  background-color: black;
   font-size: .75rem;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 3rem;
+  height: 3rem;
   padding: 0;
   font-family: sans-serif;
   border: none;
@@ -37,7 +35,6 @@ body{
 }
 .main-button span{
   visibility: hidden;
-  color: black;
   margin: 0 auto;
   opacity:0;
   transition:visibility 0s linear 0.5s,opacity 0.5s linear;
@@ -46,8 +43,8 @@ body{
   cursor: pointer;
   background-color: #fffd54;
   font-size: .75rem;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 3rem;
+  height: 3rem;
   padding: 0;
   font-family: sans-serif;
   border: 1px solid black;
@@ -59,9 +56,8 @@ body{
 .main-button-menu{
   display: block;
   position: absolute;
-  left: 1.75rem;
-  top: 0;
-  background-color: black;
+  left: 3rem;
+  bottom: 0;
   color: #fffd54;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -71,7 +67,6 @@ body{
   color: #fffd54;
   font-family: sans-serif;
   padding: 12px 16px;
-  border: 1px solid black;
   text-decoration: none;
   display: block;
   cursor: pointer;
