@@ -10,11 +10,25 @@ export function initLink(linkGroup, logo, logos, addToArray){
 
 
       let planeGeo = new THREE.PlaneGeometry(1, 1)
-      let planeMaterial = new THREE.MeshBasicMaterial({map: texture, overdraw: 0.5})
+      let planeMaterial = new THREE.MeshBasicMaterial({map: texture, overdraw: 0.5, alphaTest: 0.5})
+      texture.anisotropy = 16;
       let planeMesh = new THREE.Mesh(planeGeo, planeMaterial)
       planeMesh.material.side = THREE.DoubleSide
       planeMesh.material.transparent = true
       planeMesh.castShadow = true
+
+
+      planeMesh.customDepthMaterial = new THREE.MeshDepthMaterial(
+        {
+          map: texture,
+					depthPacking: THREE.RGBADepthPacking,
+					alphaTest: 0.5,
+          transparent: true
+        }
+);
+
+  console.log("OUT OF MY DEPTH", planeMesh.customDepthMaterial)
+
 
       linkGroup.add(planeMesh)
       addToArray(planeMesh)

@@ -11,7 +11,7 @@ html {
 
 body{
   margin: 0 auto;
-  background-color: #fffd54;
+  background-color: #F2E205;
   overflow: hidden;
 }
 .drop-down{
@@ -41,7 +41,7 @@ body{
 }
 .main-button-active{
   cursor: pointer;
-  background-color: #fffd54;
+  background-color: #F2E205;
   font-size: .75rem;
   width: 3rem;
   height: 3rem;
@@ -58,13 +58,13 @@ body{
   position: absolute;
   left: 3rem;
   bottom: 0;
-  color: #fffd54;
+  color: #F2E205;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
 .main-button-menu span{
-  color: #fffd54;
+  color: #F2E205;
   font-family: sans-serif;
   padding: 12px 16px;
   text-decoration: none;
@@ -89,7 +89,7 @@ body{
 }
 
 .menu-links a{
-  color: #fffd54;
+  color: #F2E205;
   padding: 0;
   margin: 10px;
 }

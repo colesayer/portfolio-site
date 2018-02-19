@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/colesayer/Development/portfolio_site/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "updatedAt": 1519005120887,
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/colesayer/Development/portfolio_site/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "34f1077c819a78fe07e22a5d772260a0",
         "owner": "internal-data-bridge"
       }
     },
@@ -362,14 +372,16 @@
       "siteMetadata": {
         "title": "Gatsby Default Starter"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-02-18T02:43:08.037Z",
+      "buildTime": "2018-02-19T01:51:58.152Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f9194d2f2645ae462a5fd3f1cf148bc9",
+        "contentDigest": "7e6776481f775cf1db45e6339d2c9a4f",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -382,7 +394,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "updatedAt": 1518921790703,
+      "updatedAt": 1519005120893,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
@@ -391,7 +403,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7638c15e2ad62b5325d1f5a3888ce3b1",
+        "contentDigest": "6eeefe4ddf97c0fd7a83c60b405b08da",
         "owner": "internal-data-bridge"
       }
     },
@@ -403,7 +415,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1518921790704,
+      "updatedAt": 1519005120893,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/index.js",
@@ -412,7 +424,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d75554edc5a620d2cd5ed3798d0f4abe",
+        "contentDigest": "955f3e376f89128c7ee89ce2615aeaa0",
         "owner": "internal-data-bridge"
       }
     },
@@ -424,7 +436,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/src/pages/info.js",
       "componentChunkName": "component---src-pages-info-js",
       "context": {},
-      "updatedAt": 1518921790704,
+      "updatedAt": 1519005120894,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/info.js",
@@ -433,7 +445,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1c8556b7699c2b985103523e34282236",
+        "contentDigest": "33422b8e56d445dfe9795eed0076f3d4",
         "owner": "internal-data-bridge"
       }
     },
@@ -445,7 +457,7 @@
       "component": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "updatedAt": 1518921790706,
+      "updatedAt": 1519005120895,
       "pluginCreator___NODE": "Plugin prod-404",
       "pluginCreatorId": "Plugin prod-404",
       "componentPath": "/Users/colesayer/Development/portfolio_site/src/pages/404.js",
@@ -454,7 +466,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f5def24ea25a495857729b6d806c0d06",
+        "contentDigest": "26041ca4c1db0040cc836af2cfde45d9",
         "owner": "internal-data-bridge"
       }
     }

@@ -106,7 +106,7 @@ class ThreeTitle extends Component{
 
 
     //ADD FLOOR
-    const floorColor = "#fffd54"
+    const floorColor = "#F2E205"
     this.floorGroup = new THREE.Group()
 
     this.floorGeometry = new THREE.PlaneBufferGeometry(200, 200, 32, 32)
